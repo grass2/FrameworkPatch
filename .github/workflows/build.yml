@@ -41,7 +41,7 @@ jobs:
       - name: Uploading release
         uses: softprops/action-gh-release@v2
         with:
-          name: ${{ steps.current-time.outputs.formattedTime }}
-          body: "Commit: ${{ steps.current-time.outputs.formattedTime.SHA }}"
-          tag_name: ${{ steps.current-time.outputs.formattedTime.TAG }}
+          name: ${{ steps.current-time.outputs }}
+          body: "Commit: ${{ steps.current-time.outputs.SHA }}"
+          tag_name: ${{ steps.current-time.outputs.TAG }}
           files: app/build/intermediates/dex/release/*/classes.dex
