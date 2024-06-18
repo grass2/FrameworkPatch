@@ -2,7 +2,7 @@ name: newKeybox Build release
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "NewKeybox" ]
   workflow_dispatch:
 
 jobs:
