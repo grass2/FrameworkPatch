@@ -43,5 +43,5 @@ jobs:
         with:
           name: ${{ steps.current-time.outputs }}
           body: "Commit: ${{ steps.current-time.outputs.SHA }}"
-          tag_name: ${{ steps.current-time.outputs.TAG }}
+       
           files: app/build/intermediates/dex/release/*/classes.dex
