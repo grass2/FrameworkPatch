@@ -45,4 +45,4 @@ jobs:
           name: ${{ steps.build.outputs.DATE }}
           body: "Commit: ${{ steps.build.outputs.SHA }}"
           tag_name: ${{ steps.build.outputs.TAG }}
-          files: app/build/intermediates/dex/release/*/classesX.dex
+          files: app/build/intermediates/dex/release/*/classes.dex
