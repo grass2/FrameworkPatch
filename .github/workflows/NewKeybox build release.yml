@@ -1,8 +1,8 @@
-name: newKeybox Build release
+name: build newKeybox release
 
 on:
   push:
-    branches: [ "NewKeybox" ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -12,10 +12,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Checkout source
         run: |
-          git remote add upstream 
-          https://github.com/grass2/FrameworkPatch.git
-          git fetch upstream NewKeybox
-          git checkout upstream/NewKeybox
+          git remote add upstream https://github.com/grass2/FrameworkPatch.git
+          git fetch upstream main
+          git checkout upstream/main
 
       - name: Setup Java
         uses: actions/setup-java@v4
