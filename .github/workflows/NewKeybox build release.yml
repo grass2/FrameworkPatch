@@ -14,8 +14,8 @@ jobs:
         run: |
           git remote add upstream 
           https://github.com/grass2/FrameworkPatch.git
-          git fetch upstream main
-          git checkout upstream/main
+          git fetch upstream NewKeybox
+          git checkout upstream/NewKeybox
 
       - name: Setup Java
         uses: actions/setup-java@v4
